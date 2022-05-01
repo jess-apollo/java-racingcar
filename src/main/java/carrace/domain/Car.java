@@ -5,8 +5,6 @@ import carrace.moving.RandomMoving;
 
 public class Car {
 
-    private final RandomMoving randomMoving = new RandomMoving();
-
     private final Name name;
 
     private Position position;
@@ -29,15 +27,6 @@ public class Car {
 
     public int getPosition() {
         return position.getPosition();
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "randomMoving=" + randomMoving +
-                ", name='" + name + '\'' +
-                ", position=" + position +
-                '}';
     }
 
     @Override

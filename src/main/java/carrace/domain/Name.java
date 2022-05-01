@@ -5,14 +5,17 @@ public class Name {
     private final String name;
 
     public Name(String name) {
+        handelNameException(name);
+        this.name = name;
+    }
+
+    private void handelNameException(String name) {
         if (name.length() == 0) {
             throw new IllegalArgumentException("자동차 이름은 공백일 수 없습니다.");
         }
         if (name.length() > 5) {
             throw new RuntimeException("자동차 이름은 최대 5자까지 허용됩니다.");
         }
-
-        this.name = name;
     }
 
     public String getName() {

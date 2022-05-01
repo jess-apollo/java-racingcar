@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Splitter {
-
-    private static final int MAX_LENGTH = 5;
-
     public List<Car> splitCarNames(String carNames) {
         List<String> carNamesList = List.of(carNames.split("[,]"));
 
